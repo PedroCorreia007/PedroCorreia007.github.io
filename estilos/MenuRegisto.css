@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* Caixa*/
+.Formularios
+{
+	width: 400px;
+	padding: 40px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: linear-gradient(to bottom right, rgba(128, 0, 0, 0.9), rgba(75, 15, 15, 0.9));
+	text-align: center;
+	opacity: 0.9;
+
+	border: 2px solid	#222222;
+/*	border-radius: 10%;*/
+	 border-radius: 5% 25%;
+}
+
+/* Titulo da caixa*/
+.Formularios h1
+{
+	color: #d2a56d;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+/* Cor to texto de ajuda*/
+.Formularios ::placeholder
+{
+   color: #d2a56d;
+}
+
+
+/* Conteudo da caixa*/
+.Formularios input[type = "text"], .Formularios input[type = "password"]
+{
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #360000;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: #d2a56d;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+/* Aumento da caixa quando a primo*/
+.Formularios input[type = "text"]:focus, .Formularios input[type = "password"]:focus
+{
+	width: 280px;
+	border-color: #d2a56d;
+}
+
+/* Caixa de confirmacao*/
+.Formularios input[type = "submit"]
+{
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #360000;
+	padding: 14px 40px;
+	outline: none;
+	color: #d2a56d;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+/* Rato em cima da caixa de confirmacao*/
+.Formularios input[type = "submit"]:hover
+{
+	background:#360000;
+}

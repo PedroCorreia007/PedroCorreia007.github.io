@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+
+
+
+/*Cabecalho que diz Inserir Filme*/
+.InserirFilme h1
+{
+  text-align: center;
+	color: #d2a56d;
+	text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+	font-weight: 500;
+}
+
+/*Cauxas de input*/
+.InserirFilme input[type = "text"]
+{
+  background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #360000;
+	padding: 14px 10px;
+	width: 95%;
+	outline: none;
+	color: #d2a56d;
+	border-radius: 24px;
+  background: linear-gradient(to bottom right, rgba(128, 0, 0, 0.8), rgba(75, 15, 15, 0.8));
+}
+
+.InserirFilme textarea
+{
+  background: linear-gradient(to bottom right, rgba(128, 0, 0, 0.8), rgba(75, 15, 15, 0.8));
+	display: block;
+	margin: 20px auto;
+	text-align: left;
+	border: 2px solid #360000;
+	padding: 14px 10px;
+	width: 95%;
+	outline: none;
+	color: #d2a56d;
+	border-radius: 24px;
+  resize: vertical;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+
+.InserirFilme textarea::placeholder
+{
+  text-align: center;
+}
+
+/* Caixa de confirmacao*/
+.InserirFilme input[type = "submit"]
+{
+	background: linear-gradient(to bottom right, rgba(128, 0, 0, 0.8), rgba(75, 15, 15, 0.8));
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #360000;
+	padding: 14px 40px;
+	outline: none;
+	color: #d2a56d;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.InserirFilme input[type = "submit"]:hover
+{
+  background: linear-gradient(to bottom right, rgba(128, 0, 0, 1), rgba(75, 15, 15, 1));
+}

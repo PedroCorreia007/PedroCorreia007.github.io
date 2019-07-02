@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.AglomeradoFilmes
+{
+	/*poe as caixas no centro*/
+	justify-content: center;
+
+	text-align:center;
+
+	/*Poe mais para dentro*/
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto ;
+
+	/*Espaco entre os itens de esquerdq e de direita*/
+	grid-column-gap: 2%;
+	/*Espaco entre os itens de cima e de baixo*/
+	grid-row-gap: 2%;
+}
+
+.filme
+{
+	/*Distancia entre o inicio dos filmes e a navbar*/
+	top:20%;
+
+	/*Posicao relativa as caixas. Isto faz com que as bordas fiquem apenas com as caixos dos filmes*/
+	position: relative;
+
+	/*tamanho das caixas de filmes*/
+	height: 300px;
+	width: 200px;
+}
+
+/*Regula o tamanho do poster segubdo o tamanho da div*/
+.filme img
+{
+	height: inherit;
+	width: inherit;
+}
+
+.titulo a
+{
+	/*Torna o tamanho igual ao do poster*/
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+
+
+
+	  font-size: 2vw;
+		font-size: 2vh;
+
+
+	/*Faz com que inicialmente nao se veja o titulo*/
+	opacity: 0;
+	transition: .5s ease;
+
+	/*cor do fade*/
+	background-color: #000;
+
+	/*trata do visual da letra*/
+	text-decoration: none;
+	color: white;
+  text-shadow: 2px 2px #a5a5a5;
+}
+
+.titulo :hover
+{
+  opacity: 0.5;
+
+
+
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px;
+
+}

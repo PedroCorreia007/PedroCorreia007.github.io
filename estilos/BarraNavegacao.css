@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+.BarraNavegacao
+{
+  overflow: hidden;
+  background: linear-gradient(to bottom right,#800000,  #4b0f0f);
+  opacity: 0.9;
+  box-sizing: border-box
+}
+.BarraNavegacao a
+{
+  float: right;
+  font-size: 16px;
+  color: #d7c797;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.BarraNavegacao input[type = text] /*pesquisa*/
+{
+    border: none;
+    background-color: transparent;
+    color: #d7c797;
+    font-size: 16px;
+    text-align: left;
+    border-bottom-style: solid;
+    text-decoration: none;
+    width: 5%;
+    height: 41px;
+}
+
+.BarraNavegacao input[type = text]:focus
+{
+  width: 60%;
+  text-align: center;
+}
+
+.Dropdown
+{
+  float: left;
+  overflow: hidden;
+}
+.Dropdown .BotaoDropdown
+{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #d7c797;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+.BarraNavegacao a:hover, .Dropdown:hover .BotaoDropdown:hover
+{
+  background-color: rgb(88, 11, 28, 1);
+}
+
+.BarraLogo img
+{
+  width: 35px;
+  height: 35px;
+}
+
+.BarraLogo a
+{
+  float: left;
+  padding: 5px;
+}
+
+
+
+/*#### Menu Dropdown ####*/
+
+.ConteudoDropdown
+{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.ConteudoDropdown a
+{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: #d7c797;
+}
+.Dropdown:hover .ConteudoDropdown
+{
+  display: block;
+}
